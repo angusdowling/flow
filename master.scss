@@ -1,0 +1,45 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  Core styles
+ * - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@import "core/normalize"; 				// Serves to make browser styling consistent.
+@import "core/base";							// Base tag styles. Essentially overrides Normalize, without modifying normalize.
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  Atoms
+ * - - - - - - - - - - - - - - - - - - - - - - - - */
+
+ /*
+ 	Atoms are the building blocks of the website. Each file contains global styling for each element.
+ */
+
+@import "atoms/buttons";					// Button styles.
+@import "atoms/form";							// Form styles.
+@import "atoms/icons";						// Icon styles.
+@import "atoms/table";						// Table styles.
+@import "atoms/type";							// Typography styles.
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  Layout
+ * - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@import 'layout/forms';						// Layout styling for forms. Different ways of how each element can be placed goes here.
+@import 'layout/grid';						// Grid layout styling.
+@import 'layout/one-column';			// One column layout styling.
+@import 'layout/two-column';			// Two column layout styling.
+@import 'layout/three-column';		// Three column layout styling.
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  Components
+ * - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -
+*  Pages
+* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  Hacks
+ * - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@import "hacks/ie";								// Internet explorer specific hacks.
+@import "hacks/shame";						// Code that has been placed here overrides all over code if necessary. All code here should eventually be moved out to their appropriate places, and improved on.
