@@ -10,12 +10,13 @@
   *  Import helpers
   * - - - - - - - - - - - - - - - - - - - - - - - - */
 
-  @import "helpers/variables";
-  @import "helpers/animation";
-  @import "helpers/functional";
-  @import "helpers/keyframes";
-  @import "helpers/structural";
-  @import "helpers/visual";
+  @import "framework/helpers/variables";
+  @import "framework/helpers/functions";
+  @import "framework/helpers/animation";
+  @import "framework/helpers/functional";
+  @import "framework/helpers/keyframes";
+  @import "framework/helpers/structural";
+  @import "framework/helpers/visual";
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - -
  *  Browser Update Prompt
@@ -44,7 +45,7 @@
 			content: "x";
 			display: block;
 			border-radius: 50%;
-			font-family: $font-stack-2;
+			font-family: var($typography, fonts primary);
 			font-size: 2em;
 			line-height: 100%;
 		}
@@ -65,7 +66,7 @@
 		.heading {
 			margin-bottom: 0.5em;
 			font-size: 3em;
-			font-family: $font-stack-2;
+			font-family: var($typography, fonts primary);
 			text-transform: uppercase;
 			line-height: 120%;
 		}

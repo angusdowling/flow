@@ -1,0 +1,11 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  Menu
+ * - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.menu.primary {
+  background: #333;
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  transform: translateX(-300px);
+}

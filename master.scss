@@ -1,45 +1,58 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - -
- *  Core styles
+ *  Helpers
  * - - - - - - - - - - - - - - - - - - - - - - - - */
-
-@import "core/normalize"; 				// Serves to make browser styling consistent.
-@import "core/base";							// Base tag styles. Essentially overrides Normalize, without modifying normalize.
+ @import "framework/helpers/variables";
+ @import "framework/helpers/functions";
+ @import "framework/helpers/animation";
+ @import "framework/helpers/functional";
+ @import "framework/helpers/keyframes";
+ @import "framework/helpers/structural";
+ @import "framework/helpers/visual";
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - -
- *  Atoms
+ *  Core
  * - - - - - - - - - - - - - - - - - - - - - - - - */
-
- /*
- 	Atoms are the building blocks of the website. Each file contains global styling for each element.
- */
-
-@import "atoms/buttons";					// Button styles.
-@import "atoms/form";							// Form styles.
-@import "atoms/icons";						// Icon styles.
-@import "atoms/table";						// Table styles.
-@import "atoms/type";							// Typography styles.
+@import "framework/core/normalize";         // Serves to make browser styling consistent
+@import "framework/core/base";              // Base tag styles. Essentially overrides Normalize, without modifying normalize
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - -
  *  Layout
  * - - - - - - - - - - - - - - - - - - - - - - - - */
+@import 'framework/layout/forms';            // Layout styling for forms. Different ways of how each element can be placed goes here
+@import 'framework/layout/grid';             // Grid layout styling
 
-@import 'layout/forms';						// Layout styling for forms. Different ways of how each element can be placed goes here.
-@import 'layout/grid';						// Grid layout styling.
-@import 'layout/one-column';			// One column layout styling.
-@import 'layout/two-column';			// Two column layout styling.
-@import 'layout/three-column';		// Three column layout styling.
+/* - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  Atoms
+ *  Template, generic styles
+ * - - - - - - - - - - - - - - - - - - - - - - - - */
+@import "theme/atoms/buttons";               // Buttons
+@import "theme/atoms/form";                  // Forms
+@import "theme/atoms/icons";                 // Icons
+@import "theme/atoms/table";                 // Tables
+@import "theme/atoms/type";                  // Typography
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  Organisms
+ *  Template, generic styles
+ * - - - - - - - - - - - - - - - - - - - - - - - - */
+@import 'theme/organisms/menu';              // Menu's
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - -
  *  Components
+ *  Specific, custom styles
  * - - - - - - - - - - - - - - - - - - - - - - - - */
+@import 'theme/components/masthead';         // Sitewide Masthead
+@import 'theme/components/primaryMenu';      // Primary Menu
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -
+ *  Templates
+ *  Template, generic styles
+ * - - - - - - - - - - - - - - - - - - - - - - - - */
+ @import 'theme/templates/one-column';
+ @import 'theme/templates/two-column';
+ @import 'theme/templates/three-column';
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - -
 *  Pages
+*  Specific, custom styles
 * - - - - - - - - - - - - - - - - - - - - - - - - */
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - -
- *  Hacks
- * - - - - - - - - - - - - - - - - - - - - - - - - */
-
-@import "hacks/ie";								// Internet explorer specific hacks.
-@import "hacks/shame";						// Code that has been placed here overrides all over code if necessary. All code here should eventually be moved out to their appropriate places, and improved on.
